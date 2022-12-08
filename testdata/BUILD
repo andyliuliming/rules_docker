@@ -517,7 +517,7 @@ py_binary(
     name = "gen_deb",
     srcs = ["gen_deb.py"],
     python_version = "PY3",
-    srcs_version = "PY2AND3",
+    srcs_version = "PY3",
 )
 
 generate_deb(
@@ -736,14 +736,14 @@ py3_image(
 py_library(
     name = "py_image_library_using_six",
     srcs = ["py_image_library_using_six.py"],
-    srcs_version = "PY2AND3",
+    srcs_version = "PY3",
     deps = [requirement("six")],
 )
 
 py_library(
     name = "py_image_complex_library",
     srcs = ["py_image_complex_library.py"],
-    srcs_version = "PY2AND3",
+    srcs_version = "PY3",
     deps = [
         ":py_image_library_using_six",
         "//testdata/test:py_image_library_using_addict",

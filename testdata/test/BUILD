@@ -30,7 +30,7 @@ filegroup(
 py_library(
     name = "py_image_library_using_addict",
     srcs = ["py_image_library_using_addict.py"],
-    srcs_version = "PY2AND3",
+    srcs_version = "PY3",
     deps = [requirement("addict")],
 )
 
