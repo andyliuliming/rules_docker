@@ -33,9 +33,10 @@ filegroup(
 py_binary(
     name = "build_tar",
     srcs = ["build_tar.py"],
-    legacy_create_init = True,
+    # legacy_create_init = True,
     python_version = "PY3",
-    srcs_version = "PY2AND3",
+    # force using python3
+    srcs_version = "PY3",
     visibility = ["//visibility:public"],
     deps = [":build_tar_lib"],
 )
@@ -46,7 +47,7 @@ py_library(
         "archive.py",
         "build_tar.py",
     ],
-    srcs_version = "PY2AND3",
+    srcs_version = "PY3",
     visibility = ["//visibility:public"],
 )
 

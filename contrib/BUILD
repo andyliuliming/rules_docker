@@ -41,7 +41,7 @@ py_binary(
 py_library(
     name = "extract_image_id_lib",
     srcs = [":extract_image_id.py"],
-    srcs_version = "PY2AND3",
+    srcs_version = "PY3",
 )
 
 py_binary(
