@@ -48,6 +48,7 @@ py_library(
         "build_tar.py",
     ],
     srcs_version = "PY3",
+    python_version = "PY3",
     visibility = ["//visibility:public"],
 )
 
